@@ -53,5 +53,95 @@ MAIN STYLES
 
 html{
     background-color: white;
-    
+    font-family: "Open Sans", "Calibri", sans-serif;
+    font-weight: 400;
+}
+
+body{
+    line-height: 1.5;
+}
+
+.limit{
+    max-width: 1200px;
+}
+
+/*************************************************
+NAV STYLES
+************************************************/
+
+nav{
+    padding: 24px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+}
+
+nav .limit{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar a{
+    padding: 12px 24px 12px 24px;
+    margin: 12px;
+    color: #c78c06;
+    text-decoration: none;
+}
+
+.navbar a.active{
+    background-color: #c78c06;
+    color: black;
+}
+
+/*************************************************
+HEADER STYLES
+************************************************/
+
+header{
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    color: white;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+header .limit{
+    background-color: #222222AA;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header h1{
+    font-size: 6rem;
+    font-weight: 700;
+    padding: 0 0 12px 0;  
+}
+
+header p{
+    padding: 12px 0 12px 0;
+}
+
+header .button{
+    background-color: #c78c06;
+    color: black;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+header .button h2{
+    padding: 0 12px 0 0;
 }
