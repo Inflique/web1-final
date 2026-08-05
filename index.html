@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <!-- Div 1 of a billion :broken_heart: -->
     <div class="container">
         <nav>
+            <!-- I'm stealing your naming conventions, still wondering how it'll look in CSS -->
             <div class="limit">
                 <div>
+                    <!-- Michel from Digital Graphics said to add the major keywords thrice in atl text so this is the first -->
                     <img src="images/logo.png" alt="The logo of Three Star Media">
                 </div>
                 <div>
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Team</a></li>
-                        <li><a>Contact</a></li>
+                        <!-- I nearly forgot to add the hrefs here -->
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div>
+                        <!-- I had to look up how to make a search bar and it said to add a search tag but I don't remember it being taught so I'm leaving it out -->
                         <form action="/search" method="get">
                             <input type="search" name="search" placeholder="Search" required>
                             <button type="submit"><i class="bi bi-search"></i></button>
@@ -34,11 +39,13 @@
 
         <header>
             <div class="limit">
+                <!-- I'm glad article exists to I don't have to use so many divs -->
                 <article>
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacinia eros, ut congue lacus. In aliquam arcu vitae pretium egestas. Duis id consequat massa, vitae malesuada metus. Vivamus ac posuere tortor. Curabitur id ultrices lorem. Nam vestibulum fermentum elit. Cras tempor risus sit amet massa vulputate, ut mollis dui imperdiet. Donec pharetra scelerisque ipsum, id porttitor elit tincidunt in. In non neque orci. Pellentesque finibus dui diam, id accumsan est congue sed. Donec sagittis quam dui, quis ullamcorper urna tincidunt vel. Sed dignissim mauris sed commodo facilisis. Aenean bibendum id elit vitae egestas.</p>
                 </article>
                 
+                <!-- I thought the icon tag was broken but then i realized i pasted the wrong link for Bootstrap's icon set -->
                 <div class="button">
                     <h2>Connect with us</h2>
                     <i class="bi bi-caret-right-fill"></i>
@@ -46,9 +53,11 @@
             </div>
         </header>
 
+        <!-- Chunky main tag -->
         <main>
             <div class="limit">
                 <div>
+                    <!-- Keywords 2/3 (I forgot the third one oops) -->
                     <img src="images/about-us.jpg" alt="Three Star Media's office">
                     <article>
                         <h2>About Us</h2>
@@ -59,12 +68,15 @@
                 </div>
                 <section>
                     <h2>Our Services</h2>
+                    <!-- Stealing the card class thing too -->
                     <div class="card">
+                        <!-- I think I'm doing the sub keywords correctly -->
                         <img src="images/digital.jpg" alt="Demo of Digital Transformation">
                         <article>
                             <h3>Digital Transformation</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna. Nunc a ligula in nibh euismod fringilla. Cras imperdiet suscipit sem in consequat. Praesent lobortis ac ligula sed eleifend. Cras maximus enim eu libero vestibulum facilisis. Proin venenatis tincidunt fringilla. Aliquam erat volutpat. Integer lobortis egestas ex eget malesuada. Integer tempor urna vel lacus sollicitudin, vitae faucibus libero feugiat. Vestibulum ornare urna odio, ac commodo orci mattis quis. Aenean lacinia posuere risus, sed pulvinar purus eleifend in. Nunc id commodo ante.</p>
                         </article>
+                        <!-- Separate class for the card buttons -->
                         <div class="cardbutton">
                             <h3>Digital Plans</h3>
                             <i class="bi bi-caret-right-fill"></i>
@@ -118,17 +130,20 @@
                 <section>
                     <h2>Our Vision</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna.</p>
-                    <div class="button">
+                    <!-- Luckily this button is the same style as the cards -->
+                    <div class="cardbutton">
                         <h3>Learn More</h3>
                         <i class="bi bi-caret-right-fill"></i>
                     </div>
                 </section>
+                <!-- I know most people will do a grid for this but I want to keep the images together with the descriptions in case it gets moved around in the future -->
                 <section>
                     <h2>Our Team</h2>
                     <div class="john">
                         <img src="images/john.jpg" alt="John, Three Star Media's CEO">
                         <article>
                             <h2>John Doe</h2>
+                            <!-- The class is for the orange line under it -->
                             <h3 class="jobtitle">CEO and Co-owner</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna. Nunc a ligula in nibh euismod fringilla. Cras imperdiet suscipit sem in consequat. Praesent lobortis ac ligula sed eleifend. Cras maximus enim eu libero vestibulum facilisis. Proin venenatis tincidunt fringilla. Aliquam erat volutpat. Integer lobortis egestas ex eget malesuada. Integer tempor urna vel lacus sollicitudin, vitae faucibus libero feugiat. Vestibulum ornare urna odio, ac commodo orci mattis quis. Aenean lacinia posuere risus, sed pulvinar purus eleifend in. Nunc id commodo ante.</p>
                         </article>
@@ -146,6 +161,7 @@
                     <h2>Contact Us</h2>
                     <div>
                         <h3>Send us a message</h3>
+                        <!-- I really don't like forms but maybe CSS can make it better? -->
                         <form>
                             <label for="fullname">Full Name</label>
                             <input type="text" id="fullname" name="fullname">
@@ -158,9 +174,12 @@
                         </form>
                     </div>
                     <div>
+                        <!-- Google Map -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44856.04812876848!2d-75.75398015603339!3d45.358843824379626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1785921781982!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
                     <div>
+                        <!-- This is where I'll do the grid
+                            Also I did div with article just in case...? -->
                         <article>
                             <h3>Hours of operation</h3>
                             <div><p>Days</p></div>
@@ -175,6 +194,7 @@
             </div>
         </main>
 
+        <!-- Standard footer content-->
         <footer>
             <div class="limit">
                 <p>&copy; Copyright Three Star Media, 2026</p>
