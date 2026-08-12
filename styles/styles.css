@@ -48,7 +48,7 @@ table {
 }
 
 /*************************************************
-MAIN STYLES
+UNIVERSAL STYLES
 ************************************************/
 
 html{
@@ -59,6 +59,11 @@ html{
 
 body{
     line-height: 1.5;
+}
+
+/*Thank you Google*/
+body p{
+    margin-block: 1.5rem;
 }
 
 .limit{
@@ -87,6 +92,8 @@ nav .limit{
 .navbar{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
 .navbar a{
@@ -101,6 +108,12 @@ nav .limit{
     color: black;
 }
 
+.searchbar form{
+    display: flex;
+    flex-direction: row;
+}
+
+
 /*************************************************
 HEADER STYLES
 ************************************************/
@@ -112,6 +125,7 @@ header{
     padding: 24px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 header .limit{
@@ -128,20 +142,46 @@ header h1{
     padding: 0 0 12px 0;  
 }
 
-header p{
-    padding: 12px 0 12px 0;
-}
-
 header .button{
     background-color: #c78c06;
     color: black;
-    padding: 24px;
+    padding: 24px 36px 24px 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
 }
 
-header .button h2{
+header .button p{
     padding: 0 12px 0 0;
+}
+
+/*************************************************
+MAIN STYLES
+************************************************/
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main .about{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #ffe6ac;
+    padding: 24px;
+    margin: auto;
+}
+
+main .about h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+main .about img{
+    padding: 0 24px 0 0;
+    width: 50%;
+    /* Thank you Google */
+    object-fit: cover;
 }
