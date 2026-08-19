@@ -56,18 +56,20 @@
 
         <!-- Chunky main tag -->
         <main>
-            <div class="limit">
-                <div class="about">
+            <section class="about" id="about">
+                <div class="limit">
                     <!-- Keywords 2/3 (I forgot the third one oops) -->
                     <img src="images/about-us.jpg" alt="Three Star Media's office">
                     <article>
                         <h2>About Us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna. Nunc a ligula in nibh euismod fringilla. Cras imperdiet suscipit sem in consequat. Praesent lobortis ac ligula sed eleifend. Cras maximus enim eu libero vestibulum facilisis. Proin venenatis tincidunt fringilla. Aliquam erat volutpat. Integer lobortis egestas ex eget malesuada. Integer tempor urna vel lacus sollicitudin, vitae faucibus libero feugiat. Vestibulum ornare urna odio, ac commodo orci mattis quis. Aenean lacinia posuere risus, sed pulvinar purus eleifend in. Nunc id commodo ante.</p>
-                            
+                                
                         <p>Etiam malesuada id lectus in iaculis. Maecenas porta justo eget rutrum rutrum. Nam mattis, ligula at pretium fringilla, justo lorem imperdiet enim, nec tempus sem ligula quis erat. Maecenas libero massa, consequat sit amet lacus a, sagittis lobortis turpis. Vivamus sed consequat arcu. Aliquam accumsan felis in risus ultricies, eu molestie nisl ullamcorper. Aliquam molestie ante tristique, finibus metus sed, sodales dolor. Vivamus felis ipsum, fringilla eget ultricies eget, ornare a justo. Etiam vitae congue urna, non ullamcorper ante.</p>
                     </article>
                 </div>
-                <section>
+            </section>
+            <section class="services" id="services">
+                <div class="limit">
                     <h2>Our Services</h2>
                     <!-- Stealing the card class thing too -->
                     <article>
@@ -127,8 +129,10 @@
                             <i class="bi bi-caret-right-fill"></i>
                         </div>
                     </article>
-                </section>
-                <section>
+                </div>
+            </section>
+            <section class="vision">
+                <div class="limit">
                     <h2>Our Vision</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna.</p>
                     <!-- Luckily this button is the same style as the cards -->
@@ -136,29 +140,32 @@
                         <p>Learn More</p>
                         <i class="bi bi-caret-right-fill"></i>
                     </div>
-                </section>
-                <!-- I know most people will do a grid for this but I want to keep the images together with the descriptions in case it gets moved around in the future -->
-                <section>
+                </div>
+            </section>
+            <!-- I know most people will do a grid for this but I want to keep the images together with the descriptions in case it gets moved around in the future -->
+            <section class="team" id="team">
+                <div class="limit">
                     <h2>Our Team</h2>
                     <article>
                         <img src="images/john.jpg" alt="John, Three Star Media's CEO">
                         <div class="john">
                             <h3>John Doe</h3>
                             <!-- The class is for the orange line under it -->
-                            <h4 class="jobtitle">CEO and Co-owner</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna. Nunc a ligula in nibh euismod fringilla. Cras imperdiet suscipit sem in consequat. Praesent lobortis ac ligula sed eleifend. Cras maximus enim eu libero vestibulum facilisis. Proin venenatis tincidunt fringilla. Aliquam erat volutpat. Integer lobortis egestas ex eget malesuada. Integer tempor urna vel lacus sollicitudin, vitae faucibus libero feugiat. Vestibulum ornare urna odio, ac commodo orci mattis quis. Aenean lacinia posuere risus, sed pulvinar purus eleifend in. Nunc id commodo ante.</p>
+                            <h4 class="jobtitle">CEO and Co-owner</h4>                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna. Nunc a ligula in nibh euismod fringilla. Cras imperdiet suscipit sem in consequat. Praesent lobortis ac ligula sed eleifend. Cras maximus enim eu libero vestibulum facilisis. Proin venenatis tincidunt fringilla. Aliquam erat volutpat. Integer lobortis egestas ex eget malesuada. Integer tempor urna vel lacus sollicitudin, vitae faucibus libero feugiat. Vestibulum ornare urna odio, ac commodo orci mattis quis. Aenean lacinia posuere risus, sed pulvinar purus eleifend in. Nunc id commodo ante.</p>
                         </div>
                     </article>
                     <article>
                         <img src="images/bob.jpg" alt="Bob, Three Star Media's CFO">
                         <div class="bob">
-                            <h2>Bob Rite</h2>
-                            <h3 class="jobtitle">CFO and Co-owner</h3>
+                            <h3>Bob Rite</h3>
+                            <h4 class="jobtitle">CFO and Co-owner</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non finibus nulla. Nam non leo aliquam, ultricies mauris eu, elementum magna. Nunc a ligula in nibh euismod fringilla. Cras imperdiet suscipit sem in consequat. Praesent lobortis ac ligula sed eleifend. Cras maximus enim eu libero vestibulum facilisis. Proin venenatis tincidunt fringilla. Aliquam erat volutpat. Integer lobortis egestas ex eget malesuada. Integer tempor urna vel lacus sollicitudin, vitae faucibus libero feugiat. Vestibulum ornare urna odio, ac commodo orci mattis quis. Aenean lacinia posuere risus, sed pulvinar purus eleifend in. Nunc id commodo ante.</p>
                         </div>
                     </article>
-                </section>
-                <section>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="limit">
                     <h2>Contact Us</h2>
                     <div>
                         <h3>Send us a message</h3>
@@ -192,8 +199,8 @@
                             <div><p>Closed</p></div>
                         </article>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
 
         <!-- Standard footer content-->

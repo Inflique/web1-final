@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+@media screen and (min-width: 760px) {
+}
+
 /*************************************************
 UNIVERSAL STYLES
 ************************************************/
@@ -55,6 +58,7 @@ html{
     background-color: white;
     font-family: "Open Sans", "Calibri", sans-serif;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -66,7 +70,7 @@ body p{
     margin-block: 1.5rem;
 }
 
-.limit{
+.limit {
     max-width: 1200px;
 }
 
@@ -79,19 +83,20 @@ nav{
     background-color: #222222;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 nav .limit{
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
 
 .navbar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
 }
@@ -160,28 +165,199 @@ header .button p{
 MAIN STYLES
 ************************************************/
 
-main{
-    display: flex;
+main .about {
+    width: 100%;
+    background-color: #ffe6ac;
+    display: flex;  
     justify-content: center;
 }
 
-main .about{
+main .about .limit {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    background-color: #ffe6ac;
+    justify-content: center;
     padding: 24px;
-    margin: auto;
 }
 
-main .about h2{
+main .about .limit h2 {
     font-size: 3rem;
     font-weight: 700;
 }
 
-main .about img{
-    padding: 0 24px 0 0;
+main .about .limit img {
     width: 50%;
-    /* Thank you Google */
     object-fit: cover;
+    padding: 0 24px 0 0;
+}
+
+main .services {
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    padding: 24px 0 24px 0;
+}
+
+main .services .limit {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 10fr 10fr;
+}
+
+main .services .limit h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+main .services .limit > :nth-child(1) {
+    grid-column: 1 / span 6;
+}
+
+main .services .limit > :nth-child(2) {
+    grid-column: 1 / span 3;
+}
+
+main .services .limit > :nth-child(3) {
+    grid-column: 4 / span 3;
+}
+
+main .services .limit > :nth-child(4) {
+    grid-column: 1 / span 2;
+}
+
+main .services .limit > :nth-child(5) {
+    grid-column: 3 / span 2;
+}
+
+main .services .limit > :nth-child(6) {
+    grid-column: 5 / span 2;
+}
+
+main .services article {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    background-color: #ffe6ac;
+}
+
+main .services article img {
+    width: 100%;
+    display: block;
+}
+
+main .services article h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 24px 12px 24px 12px;
+}
+
+main .services article p {
+    margin: 12px;
+}
+
+main .services article .cardbutton {
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    padding: 12px 0 12px 0;
+}
+
+main .services article .cardbutton h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+main .vision {
+    background-image: url("../images/vision.jpg");
+    background-size: cover;
+    background-position: 0 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+}
+
+main .vision .limit {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main .vision .limit h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main .vision .limit .cardbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    padding: 0 24px 0 24px;
+}
+
+main .vision .limit .cardbutton p {
+    padding: 0 12px 0 0;
+}
+
+main .team {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+}
+
+main .team h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+main .team article {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffe6ac;
+}
+
+main .team .limit > :nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+main .team .limit article img {
+    width: 50%;
+}
+
+main .team .limit article h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main .team .limit article h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+main .team .limit article .john, .bob {
+    margin: 24px;
+}
+
+main .team .limit article p {
+    margin: 24px 0 24px 0;
+}
+
+main .contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+}
+
+main .contact .limit h2 {
+    font-size: 3rem;
+    font-weight: 700;
 }
